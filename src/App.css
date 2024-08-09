@@ -1,0 +1,56 @@
+.nav-item {
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #ff7d29;
+}
+
+.full-width-border {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.gradient-grid-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top right,
+    rgba(239, 68, 68, 0.05),
+    rgba(239, 68, 68, 0.1) 70%
+  );
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gradient-grid-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0px,
+      rgba(255, 255, 255, 0) 20px,
+      rgba(255, 255, 255, 0.4) 20px,
+      rgba(255, 255, 255, 0.4) 21px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0px,
+      rgba(255, 255, 255, 0) 20px,
+      rgba(255, 255, 255, 0.4) 20px,
+      rgba(255, 255, 255, 0.4) 21px
+    );
+  pointer-events: none;
+}
+
+.gradient-grid-card .content {
+  position: relative;
+  z-index: 2;
+}
