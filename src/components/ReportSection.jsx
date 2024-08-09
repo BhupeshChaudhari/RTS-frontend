@@ -19,8 +19,8 @@ const ReportSection = () => {
             <h2 className="ml-2 text-xl font-semibold">Gwen Anderson</h2>
           </span>
         </div>
-        <button className="flex items-center bg-[#704264] text-white px-4 py-1.5 rounded-lg font-medium">
-          <RiDownloadLine className="mr-2 w-4 h-4" />
+        <button className="flex items-center bg-[#704264] text-white px-4 py-1.5 rounded-lg font-medium sm:px-3 sm:py-1">
+          <RiDownloadLine className="mr-2 w-4 h-4 sm:w-3 sm:h-3" />
           Download
         </button>
       </div>
